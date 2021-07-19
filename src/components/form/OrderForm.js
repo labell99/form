@@ -120,6 +120,7 @@ const OrderForm = () => {
                 <CardContent>
                   {/* Header */}
                   <OrderHeader />
+                  <Box component="div" display="inline">User: </Box>
 
                   <Grid container spacing={2}>
                     {/* Products */}
