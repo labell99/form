@@ -6,7 +6,7 @@ const OrderHeader = () => (
     <Typography variant="h4" paragraph>
       Immunogen Design Data
     </Typography>
-    <Typography variant="body1">Fill the form with the Immunogen data .</Typography>
+    <Typography variant="body1">Complete the form with the Immunogen data:</Typography>
     <br />
   </>
 );
