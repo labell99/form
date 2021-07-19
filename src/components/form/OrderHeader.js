@@ -4,11 +4,10 @@ import { Typography } from '@material-ui/core';
 const OrderHeader = () => (
   <>
     <Typography variant="h4" paragraph>
-      Choose your product
+      Immunogen Design Data
     </Typography>
-    <Typography variant="body1">Fill the form with the order infos.</Typography>
+    <Typography variant="body1">Fill the form with the Immunogen data .</Typography>
     <br />
-    <Typography variant="body2">Start by choosing the version. Click to know more.</Typography>
   </>
 );
 
