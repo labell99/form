@@ -1,9 +1,7 @@
 module.exports = {
   pathPrefix: '/product-order-form',
   siteMetadata: {
-    title: `Product Order Form`,
-    description: `A simple product validation with Formik hosted in Netlify with Netlify Forms`,
-    author: `Bruno Chirelli`,
+    title: `Immunogen Design & Selection (IDS)`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
