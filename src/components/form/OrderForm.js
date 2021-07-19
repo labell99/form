@@ -19,7 +19,6 @@ import moment from 'moment';
 
 // order components
 import Confirm from './Confirm';
-import OrderDelivery from './OrderDelivery';
 import OrderProducts from './OrderProducts';
 import OrderQuantity from './OrderQuantity';
 import OrderDate from './OrderDate';
@@ -180,8 +179,6 @@ const OrderForm = () => {
                     {/* Date */}
                     <OrderDate moment={moment} />
 
-                    {/* Address */}
-                    <OrderDelivery setTabValue={setTabValue} tabValue={tabValue} formik={formik} />
                   </Grid>
                 </CardContent>
                 <CardActions
