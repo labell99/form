@@ -204,43 +204,43 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="Subcategory" type="text" label="Subcategory" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="IPReference" type="text" label="IP Reference" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="PublicationSource" type="text" label="Publication Source" />
                     </Grid>
 
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="DOI" type="text" label="DOI" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="RefLinks" type="text" label="Ref Links" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="AIAnalyticsReport" type="text" label="AI Analytics Report" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="Notes" type="text" label="Notes" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="Users" type="text" label="Users" />
                     </Grid>
 
                   </Grid>
