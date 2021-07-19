@@ -127,12 +127,12 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="VaccineName" type="text" label="Vaccine Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="RecordNumber" type="text" label="Record Number" />
                     </Grid>
 
                     {/* Name */}
