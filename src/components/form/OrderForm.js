@@ -64,21 +64,6 @@ const OrderForm = () => {
       errors.neighbor = 'Insira o bairro';
     }
 
-    // Quantity
-    if (values.quantity >= 100 && values.quantity < 200) {
-      setPrice(50);
-    } else if (values.quantity >= 200 && values.quantity < 400) {
-      setPrice(100);
-    } else if (values.quantity >= 400 && values.quantity < 600) {
-      setPrice(150);
-    } else if (values.quantity >= 600 && values.quantity < 800) {
-      setPrice(200);
-    } else if (values.quantity >= 800 && values.quantity < 1000) {
-      setPrice(300);
-    } else if (values.quantity === 1000) {
-      setPrice(350);
-    }
-
     return errors;
   };
 
@@ -125,28 +110,7 @@ const OrderForm = () => {
               navigate('/success', {
                 state: { success: true },
               });
-              // ------------------- //
 
-              /*
-               * NETLIFY FORMS SETUP
-               * ******************* */
-              // fetch('/', {
-              //   method: 'POST',
-              //   headers: {
-              //     'Content-Type': 'application/x-www-form-urlencoded',
-              //   },
-              //   body: encode({ 'form-name': document.querySelector('form').getAttribute('name'), ...values }),
-              // })
-              //   .then(() => {
-              //     actions.resetForm();
-              //   })
-              //   .catch(() => {
-              //     alert('Something went wrong with your request');
-              //   })
-              //   .finally(() => {
-              //     actions.setSubmitting(false);
-              //     setConfirmShow(false);
-              //   });
             }
           }}
         >
@@ -166,9 +130,60 @@ const OrderForm = () => {
                       <Field fullWidth component={TextField} name="name" type="text" label="Name" />
                     </Grid>
 
-                    {/* Phone */}
+                    {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="phone" type="number" label="Phone" />
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
                     </Grid>
 
                   </Grid>
