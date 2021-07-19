@@ -137,38 +137,38 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="VaccineType" type="text" label="Vaccine Type" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="VaccineApplication" type="text" label="Vaccine Application" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="VaccineTarget" type="text" label="Vaccine Target" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="mRNAType" type="text" label="mRNA Type" />
                     </Grid>
 
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="ntShortName" type="text" label="Nucleotide Short Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="ntLongName" type="text" label="Nucleotide Long Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="name" type="text" label="Name" />
+                      <Field fullWidth component={TextField} name="ntCode" type="text" label="Nucleotide Sequence" />
                     </Grid>
 
                     {/* Name */}
