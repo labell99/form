@@ -20,8 +20,6 @@ import moment from 'moment';
 // order components
 import Confirm from './Confirm';
 import OrderProducts from './OrderProducts';
-import OrderQuantity from './OrderQuantity';
-import OrderDate from './OrderDate';
 import OrderHeader from './OrderHeader';
 
 // netlify form encode
@@ -172,12 +170,6 @@ const OrderForm = () => {
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="phone" type="number" label="Phone" />
                     </Grid>
-
-                    {/* Quantity */}
-                    <OrderQuantity />
-
-                    {/* Date */}
-                    <OrderDate moment={moment} />
 
                   </Grid>
                 </CardContent>
