@@ -184,9 +184,6 @@ const OrderForm = () => {
                 <CardActions
                   style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '8px' }}
                 >
-                  <Typography variant="body1" color="primary" style={{ fontWeight: '700' }}>
-                    R$ {price}
-                  </Typography>
                   <StyledButton theme={theme} disabled={formik.isSubmitting} onClick={formik.submitForm} size="large">
                     Submit Order
                   </StyledButton>
