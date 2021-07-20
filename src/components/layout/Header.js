@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
             aria-label="menu"
             rel="noopener noreferrer"
           >
-            <GitHub />
+            <AccountCircleIcon />
           </IconButton>
         </Toolbar>
       </AppBarStyled>
