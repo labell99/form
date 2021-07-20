@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { AppBar, Toolbar, Typography, useTheme } from '@material-ui/core';
-import { GitHub, AccountCircleIcon } from '@material-ui/icons';
+import { GitHub, AccountCircle } from '@material-ui/icons';
 import { IconButton, Link } from 'gatsby-theme-material-ui';
 
 const AppBarStyled = styled(AppBar)`
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
             aria-label="menu"
             rel="noopener noreferrer"
           >
-            <AccountCircleIcon />
+            <AccountCircle />
           </IconButton>
         </Toolbar>
       </AppBarStyled>
