@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { AppBar, Toolbar, Typography, useTheme } from '@material-ui/core';
-import { AccountCircleIcon } from '@material-ui/icons';
+import { GitHub } from '@material-ui/icons';
 import { IconButton, Link } from 'gatsby-theme-material-ui';
 
 const AppBarStyled = styled(AppBar)`
@@ -25,15 +25,15 @@ const Header = ({ siteTitle }) => {
           >
             {siteTitle}
           </Typography>
-           <IconButton
-            href=""
+          <IconButton
+            href="https://github.com/brunochirelli/product-order-form"
             edge="start"
             color="inherit"
             aria-label="menu"
             rel="noopener noreferrer"
-           >
-            <AccountCircleIcon />
-           </IconButton>
+          >
+            <GitHub />
+          </IconButton>
         </Toolbar>
       </AppBarStyled>
     </header>
