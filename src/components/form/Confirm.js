@@ -93,7 +93,7 @@ const Confirm = ({ values, submit, setConfirmShow, confirmShow, setSubmitting })
           onClick={submit}
           style={{
             flexGrow: 1,
-            background: #0073BF,
+            background: "#0073BF",
           }}
         >
           Order now
