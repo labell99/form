@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/product-order-form',
   siteMetadata: {
-    title: `Immunogen Design & Selection (IDS)`,
+    title: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

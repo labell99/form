@@ -51,14 +51,8 @@ const OrderForm = () => {
     const errors = {};
 
     // Address
-    if (!values.street && tabValue === 0) {
-      errors.street = 'Insira um endereço válido';
-    }
-    if (!values.number && tabValue === 0) {
-      errors.number = 'Insira o número';
-    }
-    if (!values.neighbor && tabValue === 0) {
-      errors.neighbor = 'Insira o bairro';
+    if (!values.VaccineName && tabValue === 0) {
+      errors.street = 'No IDS data entered';
     }
 
     return errors;
