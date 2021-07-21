@@ -93,7 +93,7 @@ const Confirm = ({ values, submit, setConfirmShow, confirmShow, setSubmitting })
           onClick={submit}
           style={{
             flexGrow: 1,
-            background: `linear-gradient(90deg, ${theme.palette.primary.main},${theme.palette.secondary.main})`,
+            background: #0073BF,
           }}
         >
           Order now
