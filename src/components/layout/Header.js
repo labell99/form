@@ -6,7 +6,7 @@ import { GitHub, AccountCircle } from '@material-ui/icons';
 import { IconButton, Link } from 'gatsby-theme-material-ui';
 
 const AppBarStyled = styled(AppBar)`
-  background: ${({ theme }) => `linear-gradient(90deg,${theme.palette.primary.main}, ${theme.palette.secondary.main})`};
+  background: #0073BF;
 `;
 
 const Header = ({ siteTitle }) => {

@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 const OrderHeader = () => (
   <>
     <Typography variant="h4" paragraph>
-      Immunogen Design & Selection (IDS)
+      Immunogen Design & Selection
     </Typography>
     <Typography variant="body1">Complete Immunogen data form below:</Typography>
     <br />
