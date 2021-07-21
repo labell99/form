@@ -32,8 +32,7 @@ const encode = data =>
 const StyledButton = styled(Button)`
   width: 175px;
   color: white;
-  background: ${({ theme }) =>
-    `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`};
+  background: #0073BF;
 
   @media screen and (min-width: 600px) {
     width: 300px;
