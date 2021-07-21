@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
             {siteTitle}
           </Typography>
           <IconButton
-            href="https://github.com/brunochirelli/product-order-form"
+            href=""
             edge="start"
             color="inherit"
             aria-label="menu"

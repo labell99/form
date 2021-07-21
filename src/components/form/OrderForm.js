@@ -28,9 +28,6 @@ const encode = data =>
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 
-// phone regex
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-
 // styles
 const StyledButton = styled(Button)`
   width: 175px;
@@ -72,26 +69,55 @@ const OrderForm = () => {
       <MuiPickersUtilsProvider utils={MomentUtils}>
         <Formik
           initialValues={{
-            name: '',
-            product: '',
-            street: '',
-            number: '',
-            neighbor: '',
-            quantity: 100,
+            VaccineName: '',
+            RecordNumber: '',
+            VaccineType: '',
+            VaccineApplication: '',
+            VaccineTarget: '',
+            mRNAType: '',
+            ntShortName: '',
+            ntLongName: '',
+            ntCode: '',
+            AminoAcid: '',
+            Conserved: '',
+            VariantTargets: '',
+            Description: '',
+            Category: '',
+            Type: '',
+            Subcategory: '',
+            IPReference: '',
+            PublicationSource: '',
+            DOI: '',
+            RefLinks: '',
+            AIAnalyticsReport: '',
+            Notes: '',
+            Users: '',
             pick: !!tabValue,
-            phone: '',
-            date: moment().add(2, 'days'),
           }}
           validationSchema={Yup.object({
-            name: Yup.string().required('Name is required'),
-            product: Yup.string().required('Choose your version'),
-            street: Yup.string(),
-            number: Yup.string(),
-            neighbor: Yup.string(),
-            date: Yup.string().required('Choose a date'),
-            phone: Yup.string()
-              .required('Phone is required')
-              .matches(phoneRegExp, 'Invalid phone format'),
+            VaccineName: Yup.string(),
+            RecordNumber: Yup.string(),
+            VaccineType: Yup.string(),
+            VaccineApplication: Yup.string(),
+            VaccineTarget: Yup.string(),
+            mRNAType: Yup.string(),
+            ntShortName: Yup.string(),
+            ntLongName: Yup.string(),
+            ntCode: Yup.string(),
+            AminoAcid: Yup.string(),
+            Conserved: Yup.string(),
+            VariantTargets: Yup.string(),
+            Description: Yup.string(),
+            Category: Yup.string(),
+            Type: Yup.string(),
+            Subcategory: Yup.string(),
+            IPReference: Yup.string(),
+            PublicationSource: Yup.string(),
+            DOI: Yup.string(),
+            RefLinks: Yup.string(),
+            AIAnalyticsReport: Yup.string(),
+            Notes: Yup.string(),
+            Users: Yup.string(),
             pick: Yup.bool(),
           })}
           validate={validate}
