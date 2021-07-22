@@ -17,6 +17,10 @@ const Header = ({ siteTitle }) => {
     <header>
       <AppBarStyled position="static" theme={theme} elevation={0}>
         <Toolbar variant="dense">
+          <img
+            src="https://unsplash.it/40/40"
+            style={{ alignSelf: 'left' }
+          />
           <Typography
             variant="h6"
             color="inherit"
@@ -26,7 +30,6 @@ const Header = ({ siteTitle }) => {
           >
             {siteTitle}
           </Typography>
-          <img src="https://unsplash.it/40/40"/>
           <IconButton
             href=""
             edge="start"
