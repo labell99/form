@@ -18,7 +18,10 @@ const Header = ({ siteTitle }) => {
       <AppBarStyled position="static" theme={theme} elevation={0}>
         <Toolbar variant="dense">
           <img
-            src={`logo.png`} alt="ecam logo"
+            src={`logo.png`}
+            alt="ecam logo"
+            width="30"
+            height="30"
             style={{ alignSelf: 'left' }}
           />
           <Typography
