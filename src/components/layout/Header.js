@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { AppBar, Toolbar, Typography, useTheme } from '@material-ui/core';
 import { GitHub, AccountCircle } from '@material-ui/icons';
 import { IconButton, Link } from 'gatsby-theme-material-ui';
-import { ImageSrc } from '../../images/logo.png';
+import { ImageSrc } from '../../images/logo1.png';
 
 const AppBarStyled = styled(AppBar)`
   background: #0073BF;
