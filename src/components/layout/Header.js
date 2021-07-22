@@ -24,9 +24,9 @@ const Header = ({ siteTitle }) => {
             to="/"
             style={{ flexGrow: 1, color: 'white', textDecoration: 'none' }}
           >
-            {<img src={ImageSrc}/>}
             {siteTitle}
           </Typography>
+          <img src={ImageSrc}/>
           <IconButton
             href=""
             edge="start"
