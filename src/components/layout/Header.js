@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
         <Toolbar variant="dense">
           <img
             src="https://unsplash.it/40/40"
-            style={{ alignSelf: 'left' }
+            style={{ alignSelf: 'left' }}
           />
           <Typography
             variant="h6"
