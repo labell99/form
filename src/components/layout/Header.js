@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
           <img
             src={`logo.png`}
             alt="ecam logo"
-            width="90"
+            width="100"
             height="40"
             style={{ alignSelf: 'left' }}
           />
