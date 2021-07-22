@@ -7,7 +7,6 @@ import { IconButton, Link } from 'gatsby-theme-material-ui';
 
 const AppBarStyled = styled(AppBar)`
   background: #0073BF;
-  title={<img src="https://unsplash.it/40/40"/>};
 `;
 
 const Header = ({ siteTitle }) => {
@@ -24,6 +23,7 @@ const Header = ({ siteTitle }) => {
             to="/"
             style={{ flexGrow: 1, color: 'white', textDecoration: 'none' }}
           >
+            {<img src="https://unsplash.it/40/40"/>}
             {siteTitle}
           </Typography>
           <IconButton
