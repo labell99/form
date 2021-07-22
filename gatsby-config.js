@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/product-order-form',
+  pathPrefix: '/form',
   siteMetadata: {
     title: ``,
     description: ``,

@@ -1,8 +1,8 @@
 {
-    "name": "product-order-form",
+    "name": "form",
     "description": "Order form with validation using Formik, React, and Gatsby.js with Material UI.",
     "version": "0.1.0",
-    "author": "Bruno Chirelli <bruno@chirelli.com.br>",
+    "author": "",
     "dependencies": {
         "@date-io/moment": "1.x",
         "@material-ui/core": "^4.11.0",
@@ -62,9 +62,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/brunochirelli/product-order-form"
+        "url": "https://github.com/labell99/form"
     },
     "bugs": {
-        "url": "https://github.com/brunochirelli/product-order-form/issues"
+        "url": "https://github.com/labell99/form"
     }
 }
