@@ -2,6 +2,8 @@ module.exports = {
   pathPrefix: '/product-order-form',
   siteMetadata: {
     title: ``,
+    description: ``,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
