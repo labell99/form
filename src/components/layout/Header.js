@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { AppBar, Toolbar, Typography, useTheme } from '@material-ui/core';
 import { GitHub, AccountCircle } from '@material-ui/icons';
 import { IconButton, Link } from 'gatsby-theme-material-ui';
+import { ImageSrc } from './images/logo.png';
 
 const AppBarStyled = styled(AppBar)`
   background: #0073BF;
@@ -23,7 +24,7 @@ const Header = ({ siteTitle }) => {
             to="/"
             style={{ flexGrow: 1, color: 'white', textDecoration: 'none' }}
           >
-            {<img src="https://unsplash.it/40/40"/>}
+            {<img src={imageSrc}/>}
             {siteTitle}
           </Typography>
           <IconButton
