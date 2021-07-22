@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
           >
             {siteTitle}
           </Typography>
-          <img src={ImageSrc}/>
+          <img src="https://unsplash.it/40/40"/>
           <IconButton
             href=""
             edge="start"
