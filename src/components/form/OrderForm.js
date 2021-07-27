@@ -116,7 +116,7 @@ const OrderForm = () => {
           validate={validate}
           onSubmit={(values, actions) => {
             values.pick = !!tabValue;
-
+            console.log("tr: ",values);
             if (!confirmShow) {
               setConfirmShow(true);
             } else {
