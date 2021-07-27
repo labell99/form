@@ -117,20 +117,6 @@ const OrderForm = () => {
           onSubmit={(values, actions) => {
             values.pick = !!tabValue;
             console.log("tr: ",values);
-            if (!confirmShow) {
-              setConfirmShow(true);
-            } else {
-              values.date = values.date.format('L');
-
-              // for testing purposes //
-              console.log('success...', values);
-              actions.resetForm();
-              setConfirmShow(false);
-              navigate('/success', {
-                state: { success: true },
-              });
-
-            }
           }}
         >
           {formik => (
@@ -278,15 +264,6 @@ const OrderForm = () => {
                   </StyledButton>
                 </CardActions>
               </Card>
-              {confirmShow && formik.isValid ? (
-                <Confirm
-                  submit={formik.submitForm}
-                  values={formik.values}
-                  setConfirmShow={setConfirmShow}
-                  setSubmitting={formik.setSubmitting}
-                  confirmShow={confirmShow}
-                />
-              ) : null}
             </Form>
           )}
         </Formik>
