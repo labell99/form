@@ -12,6 +12,7 @@ import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { TextField } from 'formik-material-ui';
+import { axios } from 'axios';
 
 // moment
 import MomentUtils from '@date-io/moment';
@@ -117,6 +118,14 @@ const OrderForm = () => {
           onSubmit={(values, actions) => {
             values.pick = !!tabValue;
             console.log("tr: ",values);
+            const headers = {
+              'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjZlY2Y2YmQ2MDE5MGJiNDNkYzU2MCIsImlhdCI6MTYyNzAyODI0MCwiZXhwIjoxNjI5NjIwMjQwfQ.PY3BjVa3pxE_Z8DRY6Jv4Jv9TSobrYuWs98g4a5a2wM',
+              'accept': 'application/json'
+            };
+            axios.get(`http://54.198.204.54:1337/ids`, { headers })
+			.then(res => {
+			   console.log("call: ",res);
+            })
           }}
         >
           {formik => (
