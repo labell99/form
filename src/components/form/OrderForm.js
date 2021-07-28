@@ -8,11 +8,11 @@ import { useTheme } from '@material-ui/core/styles';
 import { Button } from 'gatsby-theme-material-ui';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
-// formik
+// formiks
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { TextField } from 'formik-material-ui';
-import { axios } from 'axios';
+import * as axios from 'axios';
 
 // moment
 import MomentUtils from '@date-io/moment';
@@ -130,7 +130,7 @@ const OrderForm = () => {
           validate={validate}
           onSubmit={(values, actions) => {
             values.pick = !!tabValue;
-            console.log("tr: ",values);
+            console.log("tr: ",axios);
             getUser();
           }}
         >
