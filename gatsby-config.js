@@ -22,8 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-csp`,
       options: {
-        disableOnDev: true,
-        reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
+        disableOnDev: true
       }
     },
     `gatsby-plugin-styled-components`,
