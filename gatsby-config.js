@@ -21,9 +21,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-csp`,
-      options: {
-        disableOnDev: false
-      }
     },
     `gatsby-plugin-styled-components`,
     // `gatsby-plugin-offline`,
