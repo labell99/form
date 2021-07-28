@@ -12,7 +12,7 @@ import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { TextField } from 'formik-material-ui';
-import * as axios from 'axios';
+import axios from 'axios';
 
 // moment
 import MomentUtils from '@date-io/moment';
