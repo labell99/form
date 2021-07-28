@@ -10,7 +10,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-theme-material-ui`,
-    `gatsby-plugin-csp`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -18,9 +17,6 @@ module.exports = {
           injectFirst: true,
         },
       },
-    },
-    {
-      resolve: `gatsby-plugin-csp`,
     },
     `gatsby-plugin-styled-components`,
     // `gatsby-plugin-offline`,
