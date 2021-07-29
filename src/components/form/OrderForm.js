@@ -132,7 +132,7 @@ const OrderForm = () => {
           onSubmit={(values, actions) => {
 			console.log("submit");
             values.pick = !!tabValue;
-            getUser();
+            //getUser();
           }}
         >
           {formik => (
