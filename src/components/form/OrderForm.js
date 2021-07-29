@@ -61,10 +61,10 @@ const OrderForm = () => {
   async function getUser() {
     try {
 	  const headers = {
-        'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjZlY2Y2YmQ2MDE5MGJiNDNkYzU2MCIsImlhdCI6MTYyNzAyODI0MCwiZXhwIjoxNjI5NjIwMjQwfQ.PY3BjVa3pxE_Z8DRY6Jv4Jv9TSobrYuWs98g4a5a2wM',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjgwZTE5ZWU1NmJhMGY2MGU1YTViZSIsImlhdCI6MTYyNzU3MzI4OSwiZXhwIjoxNjMwMTY1Mjg5fQ.dHJ1veAig90JLUGqtcUKO02RV6hZbAYH-RM9A405sZ0',
         'accept': 'application/json'
       };
-      console.log("headers: ");
+      console.log("headers: ",headers);
       const response = await axios.get(`http://54.198.204.54:1337/ids`, { headers });
       console.log(response);
     } catch (error) {
@@ -132,7 +132,7 @@ const OrderForm = () => {
           onSubmit={(values, actions) => {
 			console.log("submit");
             values.pick = !!tabValue;
-            //getUser();
+            getUser();
           }}
         >
           {formik => (
