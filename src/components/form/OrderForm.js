@@ -60,6 +60,14 @@ const OrderForm = () => {
 
   async function getUser() {
     try {
+
+      const { data } = await axios.post('http://54.198.204.54:1337/auth/local', {
+         identifier: 'lee_abell@hotmail.com',
+         password: 'Test123!',
+      });
+
+      console.log("jwt ",data);
+
 	  const headers = {
         'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjgwZTE5ZWU1NmJhMGY2MGU1YTViZSIsImlhdCI6MTYyNzU3MzI4OSwiZXhwIjoxNjMwMTY1Mjg5fQ.dHJ1veAig90JLUGqtcUKO02RV6hZbAYH-RM9A405sZ0',
         'accept': 'application/json'
