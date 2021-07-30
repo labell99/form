@@ -66,10 +66,11 @@ const OrderForm = () => {
          password: 'Test123!',
       });
 
-      console.log("jwt ","Bearer " + data.jwt);
+      var authtoken = "Bearer " + data.jwt;
+      console.log("jwt: ",authtoken);
 
 	  const headers = {
-        'Authorization': 'Bearer ' + data.jwt,
+        'Authorization': authtoken,
         'accept': 'application/json'
       };
       console.log("headers: ",headers);
