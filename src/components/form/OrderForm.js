@@ -60,19 +60,15 @@ const OrderForm = () => {
 
   async function getUser() {
     try {
-
-      var data = await axios.post('http://54.198.204.54:1337/auth/local', {
+      var resp = await axios.post('http://54.198.204.54:1337/auth/local', {
          identifier: 'lee_abell@hotmail.com',
          password: 'Test123!',
       });
-      console.log("data: ",data.data.jwt);
-      var authtoken = "Bearer " + data.data.jwt;
-      console.log("jwt: ",authtoken);
+      var authtoken = "Bearer " + resp.data.jwt;
 	  const headers = {
         'Authorization': authtoken,
         'accept': 'application/json'
       };
-      console.log("headers: ",headers);
       const response = await axios.get(`http://54.198.204.54:1337/ids`, { headers });
       console.log(response);
     } catch (error) {
