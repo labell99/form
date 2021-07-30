@@ -72,7 +72,7 @@ const OrderForm = () => {
       console.log("jwt: ",authtoken);
 
 	  const headers = {
-        'Authorization': { authtoken },
+        'Authorization': authtoken,
         'accept': 'application/json'
       };
       console.log("headers: ",headers);
