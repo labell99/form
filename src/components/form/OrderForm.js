@@ -61,11 +61,11 @@ const OrderForm = () => {
   async function getUser() {
     try {
 
-      const data = await axios.post('http://54.198.204.54:1337/auth/local', {
+      var data = await axios.post('http://54.198.204.54:1337/auth/local', {
          identifier: 'lee_abell@hotmail.com',
          password: 'Test123!',
       });
-
+      console.log("data: ",data);
       var authtokenn = "Bearer " + data.jwt;
       console.log("jwtn: ",authtokenn);
       var authtoken = "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjgwZTE5ZWU1NmJhMGY2MGU1YTViZSIsImlhdCI6MTYyNzU3MzI4OSwiZXhwIjoxNjMwMTY1Mjg5fQ.dHJ1veAig90JLUGqtcUKO02RV6hZbAYH-RM9A405sZ0";
