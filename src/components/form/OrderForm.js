@@ -66,13 +66,10 @@ const OrderForm = () => {
          password: 'Test123!',
       });
       console.log("data: ",data.data.jwt);
-      var authtokenn = "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjZlZTQyNGU1MWYwMGQyMDRiOGVlZSIsImlhdCI6MTYyNzY2NjU4MSwiZXhwIjoxNjMwMjU4NTgxfQ.9c10YBsx_z-2jqWAYzcotDAyJ-uToIadpD0RjEFnabk";
-      console.log("jwtn: ",authtokenn);
-      var authtoken = "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjgwZTE5ZWU1NmJhMGY2MGU1YTViZSIsImlhdCI6MTYyNzU3MzI4OSwiZXhwIjoxNjMwMTY1Mjg5fQ.dHJ1veAig90JLUGqtcUKO02RV6hZbAYH-RM9A405sZ0";
+      var authtoken = "Bearer " + data.data.jwt;
       console.log("jwt: ",authtoken);
-
 	  const headers = {
-        'Authorization': authtokenn,
+        'Authorization': authtoken,
         'accept': 'application/json'
       };
       console.log("headers: ",headers);
