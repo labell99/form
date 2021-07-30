@@ -61,7 +61,7 @@ const OrderForm = () => {
   async function getUser() {
     try {
 
-      const { data } = await axios.post('http://54.198.204.54:1337/auth/local', {
+      const data = await axios.post('http://54.198.204.54:1337/auth/local', {
          identifier: 'lee_abell@hotmail.com',
          password: 'Test123!',
       });
@@ -72,7 +72,7 @@ const OrderForm = () => {
       console.log("jwt: ",authtoken);
 
 	  const headers = {
-        'Authorization': authtoken,
+        'Authorization': authtokenn,
         'accept': 'application/json'
       };
       console.log("headers: ",headers);
