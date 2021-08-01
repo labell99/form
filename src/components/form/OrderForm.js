@@ -86,10 +86,10 @@ const OrderForm = () => {
             VaccineType: '',
             VaccineApplication: '',
             VaccineTarget: '',
-            mRNAType: '',
-            ntShortName: '',
-            ntLongName: '',
-            ntCode: '',
+            Emergence: '',
+            ShortName: '',
+            LongName: '',
+            FACTAtarget: '',
             AminoAcid: '',
             Conserved: '',
             VariantTargets: '',
@@ -99,11 +99,16 @@ const OrderForm = () => {
             Subcategory: '',
             IPReference: '',
             PublicationSource: '',
-            DOI: '',
+            Phenotypes: '',
             RefLinks: '',
-            AIAnalyticsReport: '',
+            FACTAGenome: '',
             Notes: '',
             Users: '',
+            Notes2: '',
+            SpikeVariants: '',
+            OtherVariants: '',
+            PANGO: '',
+            BVBRC: '',
             pick: !!tabValue,
           }}
           validationSchema={Yup.object({
@@ -112,10 +117,10 @@ const OrderForm = () => {
             VaccineType: Yup.string(),
             VaccineApplication: Yup.string(),
             VaccineTarget: Yup.string(),
-            mRNAType: Yup.string(),
-            ntShortName: Yup.string(),
-            ntLongName: Yup.string(),
-            ntCode: Yup.string(),
+            Emergence: Yup.string(),
+            ShortName: Yup.string(),
+            LongName: Yup.string(),
+            FACTAtarget: Yup.string(),
             AminoAcid: Yup.string(),
             Conserved: Yup.string(),
             VariantTargets: Yup.string(),
@@ -125,11 +130,16 @@ const OrderForm = () => {
             Subcategory: Yup.string(),
             IPReference: Yup.string(),
             PublicationSource: Yup.string(),
-            DOI: Yup.string(),
+            Phenotypes: Yup.string(),
             RefLinks: Yup.string(),
-            AIAnalyticsReport: Yup.string(),
+            FACTAGenome: Yup.string(),
             Notes: Yup.string(),
             Users: Yup.string(),
+            Notes2: Yup.string(),
+            SpikeVariants: Yup.string(),
+            OtherVariants: Yup.string(),
+            PANGO: Yup.string(),
+            BVBRC: Yup.string(),
             pick: Yup.bool(),
           })}
           validate={validate}
@@ -177,23 +187,23 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="mRNAType" type="text" label="mRNA Type" />
+                      <Field fullWidth component={TextField} name="Emergence" type="text" label="Emergence" />
                     </Grid>
 
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="ntShortName" type="text" label="Nucleotide Short Name" />
+                      <Field fullWidth component={TextField} name="ShortName" type="text" label="Nucleotide Short Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="ntLongName" type="text" label="Nucleotide Long Name" />
+                      <Field fullWidth component={TextField} name="LongName" type="text" label="Nucleotide Long Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="ntCode" type="text" label="Nucleotide Sequence" />
+                      <Field fullWidth component={TextField} name="FACTAtarget" type="text" label="FACTAtarget" />
                     </Grid>
 
                     {/* Name */}
@@ -245,7 +255,7 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="DOI" type="text" label="DOI" />
+                      <Field fullWidth component={TextField} name="Phenotypes" type="text" label="Phenotypes" />
                     </Grid>
 
                     {/* Name */}
@@ -255,7 +265,7 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="AIAnalyticsReport" type="text" label="AI Analytics Report" />
+                      <Field fullWidth component={TextField} name="FACTAGenome" type="text" label="FACTAGenome" />
                     </Grid>
 
                     {/* Name */}
@@ -266,6 +276,31 @@ const OrderForm = () => {
                     {/* Name */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Users" type="text" label="Users" />
+                    </Grid>
+
+                     {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="Notes2" type="text" label="Variant Source Note (SIB)" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="SpikeVariants" type="text" label="Spike Variants" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="OtherVariants" type="text" label="Other Variants" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="PANGO" type="text" label="PANGO" />
+                    </Grid>
+
+                    {/* Name */}
+                    <Grid item xs={12}>
+                      <Field fullWidth component={TextField} name="BVBRC" type="text" label="BVBRC" />
                     </Grid>
 
                   </Grid>
