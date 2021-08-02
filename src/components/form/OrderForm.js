@@ -262,7 +262,7 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="RefLinks" type="text" label="Ref Links" />
+                      <Field fullWidth component={TextField} name="REFlinks" type="text" label="Ref Links" />
                     </Grid>
 
                     {/* Name */}
