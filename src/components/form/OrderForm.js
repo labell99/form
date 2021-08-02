@@ -89,8 +89,8 @@ const OrderForm = () => {
             VaccineApplication: '',
             VaccineTarget: '',
             Emergence: '',
-            ShortName: '',
-            LongName: '',
+            NtShortName: '',
+            NtLongName: '',
             FACTAtarget: '',
             AminoAcid: '',
             Conserved: '',
@@ -101,7 +101,7 @@ const OrderForm = () => {
             Subcategory: '',
             IPReference: '',
             PublicationSource: '',
-            Phenotypes: '',
+            DOI: '',
             RefLinks: '',
             FACTAGenome: '',
             Notes: '',
@@ -120,8 +120,8 @@ const OrderForm = () => {
             VaccineApplication: Yup.string(),
             VaccineTarget: Yup.string(),
             Emergence: Yup.string(),
-            ShortName: Yup.string(),
-            LongName: Yup.string(),
+            NtShortName: Yup.string(),
+            NtLongName: Yup.string(),
             FACTAtarget: Yup.string(),
             AminoAcid: Yup.string(),
             Conserved: Yup.string(),
@@ -132,7 +132,7 @@ const OrderForm = () => {
             Subcategory: Yup.string(),
             IPReference: Yup.string(),
             PublicationSource: Yup.string(),
-            Phenotypes: Yup.string(),
+            DOI: Yup.string(),
             RefLinks: Yup.string(),
             FACTAGenome: Yup.string(),
             Notes: Yup.string(),
@@ -195,12 +195,12 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="ShortName" type="text" label="Nucleotide Short Name" />
+                      <Field fullWidth component={TextField} name="NtShortName" type="text" label="Nucleotide Short Name" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="LongName" type="text" label="Nucleotide Long Name" />
+                      <Field fullWidth component={TextField} name="NtLongName" type="text" label="Nucleotide Long Name" />
                     </Grid>
 
                     {/* Name */}
@@ -257,7 +257,7 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="Phenotypes" type="text" label="Phenotypes" />
+                      <Field fullWidth component={TextField} name="DOI" type="text" label="Phenotypes" />
                     </Grid>
 
                     {/* Name */}
