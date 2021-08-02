@@ -153,7 +153,7 @@ const OrderForm = () => {
         >
           {formik => (
             <Form name="Orders" data-netlify="true">
-              <Card align='left' style={{ width: '512px', margin: 'auto' }}>
+              <Card style={{ width: 25rem; }}>
                 <CardContent>
                   {/* Header */}
                   <OrderHeader />
