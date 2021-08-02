@@ -89,8 +89,8 @@ const OrderForm = () => {
             VaccineApplication: '',
             VaccineTarget: '',
             Emergence: '',
-            NtShortName: '',
-            NtLongName: '',
+            ntShortName: '',
+            ntLongName: '',
             FACTAtarget: '',
             AminoAcid: '',
             Conserved: '',
@@ -120,8 +120,8 @@ const OrderForm = () => {
             VaccineApplication: Yup.string(),
             VaccineTarget: Yup.string(),
             Emergence: Yup.string(),
-            NtShortName: Yup.string(),
-            NtLongName: Yup.string(),
+            ntShortName: Yup.string(),
+            ntLongName: Yup.string(),
             FACTAtarget: Yup.string(),
             AminoAcid: Yup.string(),
             Conserved: Yup.string(),
@@ -195,12 +195,12 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="NtShortName" type="text" label="NtShortName" />
+                      <Field fullWidth component={TextField} name="ntShortName" type="text" label="Nucleotide ShortName" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="NtLongName" type="text" label="NtLongName" />
+                      <Field fullWidth component={TextField} name="ntLongName" type="text" label="Nucleotide LongName" />
                     </Grid>
 
                     {/* Name */}
