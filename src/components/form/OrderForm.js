@@ -114,34 +114,34 @@ const OrderForm = () => {
             pick: !!tabValue,
           }}
           validationSchema={Yup.object({
-            VaccineName: Yup.string(),
-            RecordNumber: Yup.string(),
-            VaccineType: Yup.string(),
-            VaccineApplication: Yup.string(),
-            VaccineTarget: Yup.string(),
-            Emergence: Yup.string(),
-            ntShortName: Yup.string(),
-            ntLongName: Yup.string(),
-            FACTAtarget: Yup.string(),
-            AminoAcid: Yup.string(),
-            Conserved: Yup.string(),
-            VariantTargets: Yup.string(),
-            Description: Yup.string(),
-            Category: Yup.string(),
-            Type: Yup.string(),
-            Subcategory: Yup.string(),
-            IPReference: Yup.string(),
-            PublicationSource: Yup.string(),
-            DOI: Yup.string(),
-            REFlinks: Yup.string(),
-            FACTAGenome: Yup.string(),
-            Notes: Yup.string(),
-            Users: Yup.string(),
-            Notes2: Yup.string(),
-            SpikeVariants: Yup.string(),
-            OtherVariants: Yup.string(),
-            PANGO: Yup.string(),
-            BVBRC: Yup.string(),
+            VaccineName: Yup.string().required('Required'),
+            RecordNumber: Yup.string().required('Required'),
+            VaccineType: Yup.string().required('Required'),
+            VaccineApplication: Yup.string().required('Required'),
+            VaccineTarget: Yup.string().required('Required'),
+            Emergence: Yup.string().required('Required'),
+            ntShortName: Yup.string().required('Required'),
+            ntLongName: Yup.string().required('Required'),
+            FACTAtarget: Yup.string().required('Required'),
+            AminoAcid: Yup.string().required('Required'),
+            Conserved: Yup.string().required('Required'),
+            VariantTargets: Yup.string().required('Required'),
+            Description: Yup.string().required('Required'),
+            Category: Yup.string().required('Required'),
+            Type: Yup.string().required('Required'),
+            Subcategory: Yup.string().required('Required'),
+            IPReference: Yup.string().required('Required'),
+            PublicationSource: Yup.string().required('Required'),
+            DOI: Yup.string().required('Required'),
+            REFlinks: Yup.string().required('Required'),
+            FACTAGenome: Yup.string().required('Required'),
+            Notes: Yup.string().required('Required'),
+            Users: Yup.string().required('Required'),
+            Notes2: Yup.string().required('Required'),
+            SpikeVariants: Yup.string().required('Required'),
+            OtherVariants: Yup.string().required('Required'),
+            PANGO: Yup.string().required('Required'),
+            BVBRC: Yup.string().required('Required'),
             pick: Yup.bool(),
           })}
           validate={validate}
@@ -162,145 +162,145 @@ const OrderForm = () => {
                     {/* Products */}
                     <OrderProducts formik={formik} />
 
-                    {/* Name */}
+                    {/* VaccineName */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="VaccineName" type="text" label="Vaccine Name" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* RecordNumber */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="RecordNumber" type="text" label="Record Number" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* VaccineType */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="VaccineType" type="text" label="Vaccine Type" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* VaccineApplication */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="VaccineApplication" type="text" label="Vaccine Application" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* VaccineTarget */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="VaccineTarget" type="text" label="Vaccine Target" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Emergence */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Emergence" type="text" label="Emergence" />
                     </Grid>
 
 
-                    {/* Name */}
+                    {/* ShortName */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="ntShortName" type="text" label="Nucleotide ShortName" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* LongName */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="ntLongName" type="text" label="Nucleotide LongName" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* FACTAtarget */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="FACTAtarget" type="text" label="FACTAtarget" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* AminoAcid */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="AminoAcid" type="text" label="Amino Acid" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Conserved */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Conserved" type="text" label="Conserved" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* VariantTargets */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="VariantTargets" type="text" label="Variant Targets" />
                     </Grid>
 
 
-                    {/* Name */}
+                    {/* Description */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Description" type="text" label="Description" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Category */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Category" type="text" label="Category" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Type */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Type" type="text" label="Type" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Subcategory */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Subcategory" type="text" label="Subcategory" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* IPReference */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="IPReference" type="text" label="IP Reference" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* PublicationSource */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="PublicationSource" type="text" label="Publication Source" />
                     </Grid>
 
 
-                    {/* Name */}
+                    {/* Phenotypes */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="DOI" type="text" label="Phenotypes" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* REFlinks */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="REFlinks" type="text" label="Ref Links" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* FACTAGenome */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="FACTAGenome" type="text" label="FACTAGenome" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Notes */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Notes" type="text" label="Notes" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* Users */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Users" type="text" label="Users" />
                     </Grid>
 
-                     {/* Name */}
+                     {/* Variant Source Note */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="Notes2" type="text" label="Variant Source Note (SIB)" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* SpikeVariants */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="SpikeVariants" type="text" label="Spike Variants" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* OtherVariants */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="OtherVariants" type="text" label="Other Variants" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* PANGO */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="PANGO" type="text" label="PANGO" />
                     </Grid>
 
-                    {/* Name */}
+                    {/* BVBRC */}
                     <Grid item xs={12}>
                       <Field fullWidth component={TextField} name="BVBRC" type="text" label="BVBRC" />
                     </Grid>
