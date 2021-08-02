@@ -102,7 +102,7 @@ const OrderForm = () => {
             IPReference: '',
             PublicationSource: '',
             DOI: '',
-            RefLinks: '',
+            REFlinks: '',
             FACTAGenome: '',
             Notes: '',
             Users: '',
@@ -133,7 +133,7 @@ const OrderForm = () => {
             IPReference: Yup.string(),
             PublicationSource: Yup.string(),
             DOI: Yup.string(),
-            RefLinks: Yup.string(),
+            REFlinks: Yup.string(),
             FACTAGenome: Yup.string(),
             Notes: Yup.string(),
             Users: Yup.string(),
@@ -195,12 +195,12 @@ const OrderForm = () => {
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="NtShortName" type="text" label="Nucleotide Short Name" />
+                      <Field fullWidth component={TextField} name="NtShortName" type="text" label="NtShortName" />
                     </Grid>
 
                     {/* Name */}
                     <Grid item xs={12}>
-                      <Field fullWidth component={TextField} name="NtLongName" type="text" label="Nucleotide Long Name" />
+                      <Field fullWidth component={TextField} name="NtLongName" type="text" label="NtLongName" />
                     </Grid>
 
                     {/* Name */}
