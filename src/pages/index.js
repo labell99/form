@@ -3,7 +3,7 @@ import { Container } from '@material-ui/core';
 import OrderForm from '../components/form/OrderForm';
 
 const Pedido = () => (
-  <Container maxWidth="sm" style={{ margin: '1rem auto', flexDirection: 'row', justifyContent: 'flex-start' }}>
+  <Container maxWidth="md" style={{ margin: '1rem auto' }}>
     <OrderForm />
   </Container>
 );
